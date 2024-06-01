@@ -16,7 +16,7 @@
 	color: #fff;
 	font-family: dvp-dingbats;
 	overflow: hidden;
-	cursor: default;
+	pointer-events: none;
 }
 
 #dvp-bg span {
