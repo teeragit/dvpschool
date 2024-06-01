@@ -27,6 +27,10 @@
 
 	<header class="dvp-header dvp-container">
 
+		<button class="dvp-header-nav-toggle">
+			<i class="fa-solid fa-bars"></i>
+		</button>
+
 		<figure class="dvp-header-logo">
 			<a href="" class="dvp-header-logo-link">
 				<img src="icon.svg" class="dvp-header-logo-img" alt="Duangvipa School Logo" />
@@ -52,28 +56,73 @@
 
 		<nav class="dvp-header-nav">
 			<ul class="dvp-header-nav-list">
-				<li class="dvp-header-nav-item dvp-active"><a href="" class="dvp-header-nav-link dvp-active">หน้าแรก</a></li>
-				<li class="dvp-header-nav-item"><a href="" class="dvp-header-nav-link">เกี่ยวกับโรงเรียน</a></li>
-				<li class="dvp-header-nav-item"><a href="" class="dvp-header-nav-link">หลักสูตร</a></li>
-				<li class="dvp-header-nav-item"><a href="" class="dvp-header-nav-link">บุคลากร</a></li>
-				<li class="dvp-header-nav-item"><a href="" class="dvp-header-nav-link">กิจกรรม</a></li>
-				<li class="dvp-header-nav-item"><a href="" class="dvp-header-nav-link">ข่าวสาร</a></li>
-				<li class="dvp-header-nav-item"><a href="" class="dvp-header-nav-link">E-Service</a></li>
-				<li class="dvp-header-nav-item"><a href="" class="dvp-header-nav-link">ติดต่อ</a></li>
+				<li class="dvp-header-nav-item dvp-active">
+					<a href="" class="dvp-header-nav-link dvp-active">หน้าแรก</a>
+				</li>
+				<li class="dvp-header-nav-item">
+					<a href="" class="dvp-header-nav-link">เกี่ยวกับโรงเรียน</a>
+					<ul class="dvp-header-nav-sub-list">
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ประวัติ เกียรติประวัติ ศิษย์เก่า</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">โครงสร้างการบริหารงาน</a></li>
+					</ul>
+				</li>
+				<li class="dvp-header-nav-item">
+					<a href="" class="dvp-header-nav-link">หลักสูตร</a>
+					<ul class="dvp-header-nav-sub-list">
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">อนุบาล</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ประถม</a></li>
+					</ul>
+				</li>
+				<li class="dvp-header-nav-item">
+					<a href="" class="dvp-header-nav-link">บุคลากร</a>
+					<ul class="dvp-header-nav-sub-list">
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">คณะผู้บริหาร</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ครูและบุคลากรระดับอนุบาล</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ครูและบุคลากรระดับประถม</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ครูและบุคลากรฝ่ายสนับสนุน</a></li>
+					</ul>
+				</li>
+				<li class="dvp-header-nav-item">
+					<a href="" class="dvp-header-nav-link">กิจกรรม</a>
+				</li>
+				<li class="dvp-header-nav-item">
+					<a href="" class="dvp-header-nav-link">ข่าวสาร</a>
+					<ul class="dvp-header-nav-sub-list">
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ปฎิทินโรงเรียน</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">จดหมายข่าว</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ประกาศ</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">โภชนาการ</a></li>
+					</ul>
+				</li>
+				<li class="dvp-header-nav-item">
+					<a href="" class="dvp-header-nav-link">E-Service</a>
+					<ul class="dvp-header-nav-sub-list">
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ระบบดูเกรดออนไลน์</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ชำระค่าธรรมเนียมการศึกษา</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">เอกสารต่างๆ</a></li>
+					</ul>
+				</li>
+				<li class="dvp-header-nav-item">
+					<a href="" class="dvp-header-nav-link">ติดต่อ</a>
+					<ul class="dvp-header-nav-sub-list">
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">ที่อยู่/เบอร์โทร</a></li>
+						<li class="dvp-header-nav-sub-item"><a href="" class="dvp-header-nav-sub-link">สมัครงาน</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 
 		<ul class="dvp-header-links">
-			<li class="dvp-header-links-item">
+			<li class="dvp-header-links-item dvp-header-links-facebook">
 				<a href="" class="dvp-header-links-icon"><i class="fa-brands fa-facebook"></i></a>
 			</li>
-			<li class="dvp-header-links-item">
+			<li class="dvp-header-links-item dvp-header-links-line">
 				<a href="" class="dvp-header-links-icon"><i class="fa-brands fa-line"></i></a>
 			</li>
-			<li class="dvp-header-links-item">
+			<li class="dvp-header-links-item dvp-header-links-email">
 				<a href="" class="dvp-header-links-icon"><i class="fa-solid fa-envelope"></i></a>
 			</li>
-			<li class="dvp-header-links-item">
+			<li class="dvp-header-links-item dvp-header-links-cta">
 				<a href="" class="dvp-header-links-button">สมัครเรียน</a>
 			</li>
 		</ul>
