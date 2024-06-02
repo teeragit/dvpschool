@@ -48,7 +48,7 @@
 	right: 0;
 	left: 0;
 	box-sizing: border-box;
-	height: 100vh;
+	height: 80vh;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
 }
 
@@ -278,7 +278,6 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 	.dvp-header-links {
 		align-self: center;
-		order: 2;
 		margin: auto 0 0 auto;
 	}
 	
@@ -298,12 +297,15 @@ html.dvp-header-nav-active .dvp-header-nav {
 		font-weight: 400;
 		font-style: italic;
 	}
+
+	.dvp-header-divider {
+		flex-basis: 100%;
+	}
 	
 	.dvp-header-nav {
 		display: block;
 		align-self: center;
 		position: static;
-		order: 2;
 		margin: 0 auto 0 0;
 		padding: 0;
 		background: transparent;
@@ -350,7 +352,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 .dvp-main-header {
 	position: relative;
-	height: 100vh;
+	height: 80vh;
 }
 
 /* Slider */
@@ -411,7 +413,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 .dvp-links-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 	gap: 1rem;
 	margin: 0;
 	padding: 0;
@@ -421,6 +423,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 .dvp-links-item {
 	background: var(--dvp-color-pink);
 	color: #fff;
+	white-space: nowrap;
 	border-radius: var(--border-radius);
 	box-shadow:
 		inset 0 0 0 1px rgba(0, 0, 0, 0.25),
@@ -528,7 +531,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 .dvp-posts-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 	gap: 1rem;
 	margin: 0;
 	padding: 0;
@@ -844,4 +847,38 @@ html.dvp-header-nav-active .dvp-header-nav {
 .dvp-footer-lang-item.dvp-active {
 	font-weight: 400;
 	font-style: italic;
+}
+
+@media screen and (min-width: 782px) {
+
+	.dvp-footer {
+		justify-content: space-between;
+	}
+
+	.dvp-footer-info {
+		margin: 0;
+		padding: 0;
+		flex-basis: auto;
+	}
+
+	.dvp-footer-nav {
+		margin: 0;
+		padding: 0;
+		flex-basis: auto;
+		border: 0;
+	}
+
+	.dvp-footer-divider {
+		flex-basis: 100%;
+	}
+	
+	.dvp-footer-links,
+	.dvp-footer-lang {
+		flex-basis: auto;
+	}
+
+	.dvp-footer-links + .dvp-footer-lang {
+		margin-top: 0;
+	}
+
 }
