@@ -10,6 +10,7 @@
 	--dvp-color-oxford: #002147;
 
 	--dvp-padding: 2rem;
+	--dvp-gutter: max(2rem, calc((100% - 1408px) / 2));
 
 	font-size: 16px;
 	position: relative;
@@ -33,7 +34,7 @@
 }
 
 .dvp-container {
-	padding: var(--dvp-padding);
+	padding: var(--dvp-padding) var(--dvp-gutter);
 }
 
 /* Header */
@@ -57,7 +58,7 @@
 	right: 0;
 	z-index: 2;
 	margin: 0;
-	padding: 0 var(--dvp-padding);
+	padding: 0 var(--dvp-gutter);
 	height: 5rem;
 	background: transparent;
 	color: var(--dvp-color-oxford);
@@ -192,7 +193,7 @@
 	left: 0;
 	z-index: 1;
 	margin: 0;
-	padding: 0 var(--dvp-padding);
+	padding: 0 var(--dvp-gutter);
 	height: 5rem;
 	background: var(--dvp-color-pink);
 	color: #fff;
@@ -218,7 +219,7 @@
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-	padding: var(--dvp-padding);
+	padding: var(--dvp-padding) var(--dvp-gutter);
 	background: rgb(255, 255, 255, 0.9);
 	color: var(--dvp-color-pink);
 	overflow-x: hidden;
@@ -281,10 +282,10 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 	.dvp-header {
 		flex-flow: row wrap;
+		align-content: start;
 		column-gap: 1.5rem;
 		row-gap: 0.5rem;
-		height: auto;
-		background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+		background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 60%);
 	}
 
 	.dvp-header-nav-toggle {
@@ -317,7 +318,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 		display: flex;
 		position: absolute;
 		top: var(--dvp-padding);
-		right: var(--dvp-padding);
+		right: var(--dvp-gutter);
 		left: auto;
 		padding: 0;
 		height: auto;
@@ -742,7 +743,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 	text-align: right;
 }
 
-/* Affilicates */
+/* Affiliates */
 
 .dvp-affiliates-title {
 	font-size: 1.25rem;
