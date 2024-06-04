@@ -15,5 +15,5 @@ function dvp_randomClasses( name, prefix, variations ) {
 }
 
 window.addEventListener( 'load', function() {
-  dvp_randomClasses( '.dvp-links-item', 'dvp-links-color-', 8 );
+  dvp_randomClasses( '.dvp-links-button', 'dvp-links-color-', 8 );
 })
