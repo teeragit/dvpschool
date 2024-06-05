@@ -79,6 +79,7 @@
 	font-size: 1.5rem;
 	border: 0;
 	cursor: pointer;
+	transition: color 0.5s, filter 0.5s;
 }
 
 .dvp-header-nav-toggle:hover {
@@ -171,7 +172,9 @@
 
 .dvp-header-links-icon:hover {
 	color: #fff;
-	filter: drop-shadow(0 0 0.5rem var(--dvp-color-pink));
+	filter:
+		drop-shadow(0 0 0.125rem var(--dvp-color-pink-muted-dark))
+		drop-shadow(0 0 0.5rem var(--dvp-color-pink));
 }
 
 .dvp-header-links-icon > * {
@@ -195,6 +198,7 @@
 	box-shadow:
 		inset 0 0 0 1px rgba(0, 0, 0, 0.1),
 		inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+	transition: background 0.5s, color 0.5s, box-shadow 0.5s;
 }
 
 .dvp-header-links-button:hover {
@@ -272,6 +276,7 @@
 .dvp-header-nav-link,
 .dvp-header-nav-sub-link {
 	color: inherit;
+	transition: color 0.5s;
 }
 
 .dvp-header-lang-link:hover,
@@ -405,19 +410,34 @@ html.dvp-header-nav-active .dvp-header-nav {
 		padding: 0;
 		border: 0;
 	}
+
+	.dvp-header-nav-item:hover .dvp-header-nav-link {
+		position: relative;
+		z-index: 2;
+		color: #fff;
+		text-shadow:
+			0 0 0.125rem var(--dvp-color-pink-muted-dark),
+			0 0 0.5rem var(--dvp-color-pink);
+	}
 	
 	.dvp-header-nav-sub-list {
 		display: none;
 		position: absolute;
-		padding: 1rem;
+		padding: 0.75rem 1rem;
 		background: #fff;
 		font-size: 1.25rem;
 		font-weight: 400;
 		list-style: none;
+		border-radius: 0.25rem;
+		box-shadow: 0 0 2rem var(--dvp-color-pink);
 	}
 
 	.dvp-header-nav-item:hover .dvp-header-nav-sub-list {
 		display: block;
+	}
+
+	.dvp-header-nav-sub-link:hover {
+		color: var(--dvp-color-pink);
 	}
 	
 	html.dvp-header-nav-active {
@@ -524,6 +544,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 		inset 0 0 0 2px rgba(255, 255, 255, 0.33);
 	white-space: nowrap;
 	overflow: hidden;
+	transition: background 0.5s, color 0.5s, box-shadow 0.5s;
 }
 
 .dvp-links-color-1 {
@@ -714,6 +735,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 	box-shadow:
 		inset 0 0 0 1px rgba(0, 0, 0, 0.2),
 		inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+	transition: background 0.5s, box-shadow 0.5s;
 }
 
 .dvp-posts-align-top .dvp-posts-link::after {
@@ -757,10 +779,15 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 .dvp-posts-translucent .dvp-posts-img {
 	opacity: 0.5;
+	transition: opacity 0.5s;
 }
 
 .dvp-posts-translucent:hover .dvp-posts-img {
 	opacity: 0.8;
+}
+
+.dvp-posts-translucent:hover .dvp-posts-link:hover .dvp-posts-img {
+	opacity: 0.9;
 }
 
 .dvp-posts-align-top .dvp-posts-img,
@@ -791,6 +818,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 	font-weight: 400;
 	line-height: 0.9;
 	overflow: hidden;
+	transition: color 0.5s;
 }
 
 .dvp-posts-align-right .dvp-posts-title {
@@ -822,6 +850,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 	text-transform: uppercase;
 	letter-spacing: 0.125rem;
 	white-space: nowrap;
+	transition: color 0.5s;
 }
 
 .dvp-posts-align-bottom:hover .dvp-posts-date {
@@ -866,6 +895,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	transition: color 0.5s, background 0.5s, outline 0.5s;
 }
 
 .dvp-posts-align-top .dvp-posts-tags-link,
@@ -1043,6 +1073,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 .dvp-footer-links-icon,
 .dvp-footer-lang-link {
 	color: inherit;
+	transition: color 0.5s;
 }
 
 .dvp-footer-nav-item > a:hover,
