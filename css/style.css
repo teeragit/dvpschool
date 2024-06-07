@@ -47,6 +47,10 @@
 	padding: var(--dvp-padding) var(--dvp-gutter);
 }
 
+.dvp-nowrap {
+	white-space: nowrap;
+}
+
 /* Header */
 
 .dvp-header {
@@ -504,7 +508,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 }
 
 .dvp-section-footer-link-icon {
-	font-size: 0.5em;
+	font-size: 1rem;
 }
 
 .dvp-section-footer-link-label {
@@ -645,6 +649,37 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 .dvp-quote-caption {
 	color: rgba(0, 0, 0, 0.67);
+	white-space: nowrap;
+}
+
+@media screen and (min-width: 782px) {
+
+	.dvp-quote-headline {
+		font-size: 4rem;
+	}
+
+	.dvp-quote-subhead {
+		font-size: 1.25rem;
+		letter-spacing: 0.5rem;
+	}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+	.dvp-quote-title {
+		font-size: 1.5rem;
+	}
+
+	.dvp-quote-headline {
+		font-size: 6rem;
+	}
+
+	.dvp-quote-subhead {
+		font-size: 2.5rem;
+		letter-spacing: 1rem;
+	}
+
 }
 
 /* Posts (Thumbnails) */
@@ -949,6 +984,14 @@ html.dvp-header-nav-active .dvp-header-nav {
 	text-align: right;
 }
 
+@media screen and (min-width: 782px) {
+
+	.dvp-posts-list {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+}
+
 /* Affiliates */
 
 .dvp-affiliates-title {
@@ -979,6 +1022,14 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 .dvp-affiliates-img {
 	width: 100%;
+}
+
+@media screen and (min-width: 782px) {
+
+	.dvp-affiliates-title {
+		font-size: 1.5rem;
+	}
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -1148,6 +1199,26 @@ html.dvp-header-nav-active .dvp-header-nav {
 
 	.dvp-footer-links + .dvp-footer-lang {
 		margin-top: 0;
+	}
+
+}
+
+@media screen and (min-width: 1440px) {
+
+	.dvp-footer {
+		font-size: 1.25rem;
+	}
+
+	.dvp-footer-name-copy:lang(th) {
+		font-size: 2.5rem;
+	}
+	
+	.dvp-footer-name-copy:lang(en) {
+		font-size: 2rem;
+	}
+	
+	.dvp-footer-name-copy:lang(cn) {
+		font-size: 2rem;
 	}
 
 }
