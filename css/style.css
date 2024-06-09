@@ -371,6 +371,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 		color: var(--dvp-color-blue);
 		border-radius: 0.25rem;
 		outline: 1px solid var(--dvp-color-blue);
+		transition: color 0.5s, background 0.5s, outline 0.5s;
 	}
 
 	.dvp-header-lang-link.dvp-active {
@@ -545,7 +546,7 @@ html.dvp-header-nav-active .dvp-header-nav {
 	align-items: center;
 	gap: 0.75rem;
 	padding: 0.75rem 1rem;
-	background: var(--dvp-color-pink);
+	background: #eee;
 	color: #fff;
 	border-radius: 0.5rem;
 	box-shadow:
@@ -984,10 +985,14 @@ html.dvp-header-nav-active .dvp-header-nav {
 	text-align: right;
 }
 
-@media screen and (min-width: 782px) {
+@media screen and (min-width: 1440px) {
 
 	.dvp-posts-list {
 		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.dvp-posts-align-right .dvp-posts-title {
+		font-size: inherit;
 	}
 
 }
