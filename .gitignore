@@ -4,3 +4,9 @@
 node_modules
 dist
 .cache
+
+# Editor Configs
+/.vscode/
+
+# macOS
+.DS_Store
